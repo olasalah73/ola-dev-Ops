@@ -1,0 +1,207 @@
+lab [1]
+
+● Install Git.?
+sudo apt install git
+● create an account on Github?
+after creating account in github we did
+git config --global user.name "olasalah73"
+git config --global user.email "olasalah907@gmail.com"
+●Accept my invitation in opensource repository from gmail. Then clone it 
+to your machine, and upload file with your full name
+
+ola@ola-HP-EliteBook-840-G3:~$ git clone  git@github.com:FatmaKhaled/devops3month
+cd devops3month
+git status
+touch ola salah mohamed ali 
+git add.
+git commit -m "ola salah mohamed ali "
+●Create a local repository on your machine, and create a remote 
+repository in github (and bitbucket). Then Upload a file with your full 
+name from your local repository to remote repository. And send me an 
+invitation.
+
+mkdir dirgit
+cd dirgit
+git init
+touvh file1 
+git add.
+git status
+git commit -m "add file1"
+
+ ● What is the Pull Request
+ Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators 
+ and add follow-up commits before your changes are merged into the base branch.
+
+
+lab [2]
+
+●Create a new project on your local machine then push it to your 
+remote repo.
+mkdir dirgit
+cd dirgit
+git init
+touch file1 
+git add.
+git status
+git commit -m "add file1"
+git push origin main
+
+●create two branches (dev and test) then create two files in dev 
+branch and push this changes to remote repo.
+ 
+ git check main 
+ git branch dev
+ git checkout dev
+ ls
+ touch div1
+ git add .
+ git commit -m "add dev1"
+ ls
+ git push origin dev
+ 
+ git check main 
+ git branch test
+ git checkout test
+ ls
+ touch test1
+ git add .
+ git commit -m "add test1"
+ ls
+ git push origin test
+ 
+ ●merge this changes on main branch and then push it to your 
+remote main branch.
+
+git check out main
+git merge dev
+
+●Tell me how to remove them locally and remotly
+local
+get branch-d dev
+get branch-d test
+
+remotely
+git push origin :dev
+git push origin :dev
+
+●create an annoted tag with tagname v1.4.
+git tag -a v1.4 -m "messtag
+
+
+●push it to remote server
+git push origin v1.4
+
+●tell me how to list tags locally
+
+git tag 
+
+●tell me how to delete tag locally and remotely.
+
+remotelly
+git push origin --delete v1.4
+git tag -d v1.4
+
+●What is git rebase? Give me an example
+Rebasing is the process of moving or combining a sequence of commits to a new base commit Rebasing is a common way to integrate upstream changes into your local repository. Pulling in upstream changes with Git merge results in a superfluous merge commit every time you want to see how the project has progressed For example, consider a situation where the main branch has progressed since you started working on a feature branch. You want to get the latest updates to the main branch in your feature branch, but you want to keep your branch's history clean so it appears as if you've been working off the latest main branch. This gives the later benefit of a clean merge of your feature branch back into the main branch. Why do we want to maintain a "clean history"? The benefits of having a clean history become tangible when performing Git operations to investigate the introduction of a regression. A more real-world scenario would be:
+
+A bug is identified in the main branch. A feature that was working successfully is now broken.
+A developer examines the history of the main branch using git log because of the "clean history" the developer is quickly able to reason about the history of the project.
+The developer can not identify when the bug was introduced using git log so the developer executes a git bisect.
+Because the git history is clean, git bisect has a refined set of commits to compare when looking for the regression. The developer quickly finds the commit that introduced the bug and is able to act accordingly.
+
+
+●README.md file.   Add image at the end of README.md file
+**Foobar**
+--
+***
+*foobar is a python library for dealing with word pluralization*
+***
+**Installation**
+-
+*use the package manager pip to install foobar*
+***
+pip install foobar
+***
+**Usage**
+--
+```
+import foobar
+foobar.pluralize('word')#return'word'
+foobar.pluralize('goose')#returns'geese'
+foobar.singularize('phenomena')#returns'phenomena'
+```
+***
+**contributing**
+-
+ pull requsts are welcome .for major changes, please open an issue first to discuss what you would like to change 
+ .
+ please make sure to update tests as appropriate
+ ***
+ **license**
+ -
+ [MIT](https://www.mit.edu/)
+ 
+ 
+***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
